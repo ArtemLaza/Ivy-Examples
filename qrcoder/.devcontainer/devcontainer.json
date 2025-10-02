@@ -11,24 +11,16 @@
       "onAutoForward": "openPreview"
     }
   },
+  "workspaceFolder": "/workspaces/qrcoder",
+  "mounts": [
+    "source=${localWorkspaceFolder}/qrcoder,target=/workspaces/qrcoder,type=bind,consistency=cached"
+  ],
   "customizations": {
     "vscode": {
       "settings": {
         "dotnet.defaultSolution": "**/*.sln",
         "terminal.integrated.shell.linux": "/bin/bash",
-        "files.exclude": {
-          "**/../**": true,
-          "**/../../**": true,
-          "**/../../../**": true,
-          "**/../../../../**": true
-        },
-        "search.exclude": {
-          "**/../**": true,
-          "**/../../**": true,
-          "**/../../../**": true,
-          "**/../../../../**": true
-        },
-        "explorer.excludeGitIgnore": true
+        "terminal.integrated.cwd": "/workspaces/qrcoder"
       },
       "codespaces": {
         "openFiles": ["Apps/ProfileApp.cs"]
