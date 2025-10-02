@@ -1,0 +1,15 @@
+{
+    "name": "Ivy Examples Base",
+    "image": "mcr.microsoft.com/dotnet/sdk:9.0",
+    "features": {},
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-dotnettools.csharp",
+          "ms-vscode.powershell",
+          "ms-dotnettools.csdevkit"
+        ]
+      }
+    }
+  }
+  

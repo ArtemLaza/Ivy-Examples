@@ -34,9 +34,10 @@ This specific implementation creates a **Profile Creator** application that allo
 
 ## One-Click Development Environment
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=attempt-start&repo=ArtemLazarchuk%2FIvy-Examples&machine=standardLinux32gb&devcontainer_path=qrcoder%2F.devcontainer%2Fdevcontainer.json&location=EuropeWest)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=attempt-start&repo=ArtemLazarchuk%2FIvy-Examples&machine=standardLinux32gb&devcontainer_path=&devcontainer_path=qrcoder%2F.devcontainer%2Fdevcontainer.json.override&location=EuropeWest)
 
 Click the badge above to open Ivy Examples repository in GitHub Codespaces with:
+
 - **.NET 9.0** SDK pre-installed
 - **All Ivy Examples** available for exploration
 - **Navigate to `qrcoder` folder** to run this QR Code Generator
@@ -72,6 +73,6 @@ Deploy this example to Ivy's hosting platform:
    ```bash
    ivy deploy
    ```
-This will deploy your QR code generation application with a single command.
+   This will deploy your QR code generation application with a single command.
 
 ## For more details, see the [Ivy Documentation](https://docs.ivy.app)
