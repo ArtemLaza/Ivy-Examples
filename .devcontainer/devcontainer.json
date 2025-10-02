@@ -1,70 +1,27 @@
-[
-  {
-    "name": "Ivy Examples Base",
-    "image": "mcr.microsoft.com/dotnet/sdk:9.0",
-    "features": {},
-    "customizations": {
-      "vscode": {
-        "extensions": [
-          "ms-dotnettools.csharp",
-          "ms-vscode.powershell",
-          "ms-dotnettools.csdevkit"
-        ]
-      }
+{
+  "name": "QR Code Generator",
+  "image": "mcr.microsoft.com/dotnet/sdk:9.0",
+  "features": {},
+  "workspaceFolder": "/workspaces/Ivy-Examples/qrcoder",
+  "postCreateCommand": "dotnet tool install -g Ivy.Console",
+  "postStartCommand": "dotnet watch run",
+  "forwardPorts": [5010],
+  "portsAttributes": {
+    "5010": {
+      "label": "QR Code Generator",
+      "onAutoForward": "openPreview"
     }
   },
-  {
-    "name": "QR Code Generator",
-    "image": "mcr.microsoft.com/dotnet/sdk:9.0",
-    "features": {},
-    "workspaceFolder": "/workspaces/Ivy-Examples/qrcoder",
-    "postCreateCommand": "dotnet tool install -g Ivy.Console",
-    "postStartCommand": "dotnet watch run",
-    "forwardPorts": [5010],
-    "portsAttributes": {
-      "5010": {
-        "label": "QR Code Generator",
-        "onAutoForward": "openPreview"
-      }
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-vscode.powershell",
+        "ms-dotnettools.csdevkit"
+      ]
     },
-    "customizations": {
-      "vscode": {
-        "extensions": [
-          "ms-dotnettools.csharp",
-          "ms-vscode.powershell",
-          "ms-dotnettools.csdevkit"
-        ]
-      },
-      "codespaces": {
-        "openFiles": ["Apps/ProfileApp.cs"]
-      }
-    }
-  },
-  {
-    "name": "Hello World Example",
-    "image": "mcr.microsoft.com/dotnet/sdk:9.0",
-    "features": {},
-    "workspaceFolder": "/workspaces/Ivy-Examples/helloworld",
-    "postCreateCommand": "dotnet tool install -g Ivy.Console",
-    "postStartCommand": "dotnet watch run",
-    "forwardPorts": [5010],
-    "portsAttributes": {
-      "5010": {
-        "label": "Hello World",
-        "onAutoForward": "openPreview"
-      }
-    },
-    "customizations": {
-      "vscode": {
-        "extensions": [
-          "ms-dotnettools.csharp",
-          "ms-vscode.powershell",
-          "ms-dotnettools.csdevkit"
-        ]
-      },
-      "codespaces": {
-        "openFiles": ["Apps/HelloApp.cs"]
-      }
+    "codespaces": {
+      "openFiles": ["Apps/ProfileApp.cs"]
     }
   }
-]
+}

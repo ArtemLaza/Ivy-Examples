@@ -34,7 +34,7 @@ This specific implementation creates a **Profile Creator** application that allo
 
 ## One-Click Development Environment
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=attempt-start&repo=ArtemLazarchuk%2FIvy-Examples&machine=standardLinux32gb&devcontainer_path=&devcontainer_path=qrcoder%2F.devcontainer%2Fdevcontainer.json.override&location=EuropeWest)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=attempt-start&repo=ArtemLazarchuk%2FIvy-Examples&machine=standardLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=EuropeWest)
 
 Click the badge above to open Ivy Examples repository in GitHub Codespaces with:
 
