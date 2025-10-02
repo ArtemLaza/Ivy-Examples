@@ -2,8 +2,8 @@
   "name": "QR Code Generator",
   "image": "mcr.microsoft.com/dotnet/sdk:9.0",
   "features": {},
-  "postCreateCommand": "dotnet tool install -g Ivy.Console",
-  "postStartCommand": "dotnet watch run",
+  "postCreateCommand": "cd /workspaces/qrcoderdotnet && dotnettool install -g Ivy.Console  ",
+  "postStartCommand": "cd /workspaces/qrcoder && dotnet watch run",
   "forwardPorts": [5010],
   "portsAttributes": {
     "5010": {
@@ -12,9 +12,6 @@
     }
   },
   "workspaceFolder": "/workspaces/qrcoder",
-  "mounts": [
-    "source=${localWorkspaceFolder}/qrcoder,target=/workspaces/qrcoder,type=bind,consistency=cached"
-  ],
   "customizations": {
     "vscode": {
       "settings": {
