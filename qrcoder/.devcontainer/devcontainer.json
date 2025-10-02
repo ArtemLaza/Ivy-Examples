@@ -2,21 +2,20 @@
   "name": "QR Code Generator",
   "image": "mcr.microsoft.com/dotnet/sdk:9.0",
   "features": {},
-  "postCreateCommand": "dotnet tool install -g Ivy.Console && cd /workspaces/Ivy-Examples/qrcoder && dotnet restore",
-  "postStartCommand": "cd /workspaces/Ivy-Examples/qrcoder && dotnet watch run",
+  "postCreateCommand": "dotnet tool install -g Ivy.Console",
+  "postStartCommand": "dotnet watch run",
   "forwardPorts": [5010],
   "portsAttributes": {
     "5010": {
-      "label": "Ivy QR Code Generator",
+      "label": "QR Code Generator",
       "onAutoForward": "openPreview"
     }
   },
   "customizations": {
     "vscode": {
       "settings": {
-        "dotnet.defaultSolution": "/workspaces/Ivy-Examples/qrcoder/*.sln",
+        "dotnet.defaultSolution": "**/*.sln",
         "terminal.integrated.shell.linux": "/bin/bash",
-        "terminal.integrated.cwd": "/workspaces/Ivy-Examples/qrcoder",
         "files.exclude": {
           "**/../**": true,
           "**/../../**": true,
@@ -31,15 +30,14 @@
         },
         "explorer.excludeGitIgnore": true
       },
+      "codespaces": {
+        "openFiles": ["Apps/ProfileApp.cs"]
+      },
       "extensions": [
         "ms-dotnettools.csharp",
         "ms-vscode.powershell",
         "ms-dotnettools.csdevkit"
       ]
     }
-  },
-  "workspaceFolder": "/workspaces/Ivy-Examples/qrcoder",
-  "mounts": [
-    "source=${localWorkspaceFolder}/qrcoder,target=/workspaces/Ivy-Examples/qrcoder,type=bind,consistency=cached"
-  ]
+  }
 }
